@@ -21,6 +21,6 @@ with open('README.md', 'w') as outfile:
     for idx, (readme_head, pwd) in enumerate(table_of_contents):
 
         head = readme_head[2:]
-        outfile.write(f"- {idx + 1}장. [{head}]({pwd})\n")
+        outfile.write(f"- [{idx + 1}장. {head}]({pwd})\n")
 
     outfile.write("\n\n")
